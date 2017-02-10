@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/theme_color_primary_trans"
+              android:orientation="vertical"
+              android:paddingBottom="10dp"
+
+
+    >
+
+    <RelativeLayout
+        android:id="@+id/head_view_parent"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:id="@+id/mheader_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/comment_header_bg"
+            android:gravity="center"
+            android:text="最热评论"
+            android:textColor="@color/item_text_sel"
+            android:textSize="12sp"
+
+            />
+
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="20dp"
+        android:background="@color/divider_color"
+        />
+
+    <RelativeLayout
+        android:id="@+id/mRlcontainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="15dp"
+        >
+
+        <shinerich.com.stylemodel.widget.CircleImageView
+            android:id="@+id/comment_head"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/default_comment_head"/>
+
+
+        <TextView
+            android:id="@+id/comment_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@id/comment_head"
+            android:text="tracy"
+            android:textColor="@color/green_text_color"
+            android:textSize="13sp"
+
+
+            />
+
+        <TextView
+            android:id="@+id/submit_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/comment_name"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/comment_head"
+            android:text="2323232"
+            android:textColor="@color/c999"
+            android:textSize="11sp"
+
+
+            />
+
+        <ImageView
+            android:id="@+id/add_praise_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:src="@drawable/add_praise_icon"
+
+            />
+
+        <TextView
+            android:id="@+id/add_praise_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@id/add_praise_icon"
+            android:text="325 赞"
+            android:textColor="@color/c999"
+
+
+            />
+
+        <TextView
+            android:id="@+id/mCommentContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/submit_time"
+            android:layout_below="@id/submit_time"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="17dp"
+            android:gravity="left"
+            android:text="法庭2333333"
+            android:textColor="@color/content_color"
+            android:textSize="13sp"
+            />
+
+        <TextView
+            android:id="@+id/dismissBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/mCommentContent"
+            android:layout_below="@id/mCommentContent"
+            android:layout_marginTop="20dp"
+            android:drawableLeft="@drawable/dismiss_reply_icon"
+            android:drawablePadding="8dp"
+            android:text="隐藏回复"
+            android:textColor="@color/common_text_color"
+            android:textSize="11sp"
+
+            />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/mReplyContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/dismissBtn"
+            android:layout_below="@id/dismissBtn"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/reply_bg"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:visibility="visible"
+
+            >
+        </android.support.v7.widget.RecyclerView>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

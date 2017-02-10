@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">StyleMode</string>
+    <string name="about_msg">StyleMode·中文（www.Stylemode.com）关注全球时尚，
+        以编辑的专业视角为你捕捉最新潮流动态引领优质生活方式，培养高端生活品位。</string>
+
+    <string name="about_msg1">以Stylemode·中文网为核心，触及多平台，将优质内容传递给读者。
+        专业的编辑团队，出色的策划团队内容传递给读者。专业的编辑团队，出色的策划团队，强大的技术团队，
+        以内容高度为核心，结合多煤体时代前沿技术，为读者创造有趣、有料的高质内容。</string>
+
+    <string name="about_number">微信公众号：&#160;sytle_mode</string>
+    <string name="network_no">当前网络不可用</string>
+</resources>

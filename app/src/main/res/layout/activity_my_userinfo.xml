@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/bg"
+              android:orientation="vertical">
+
+    <!--标题-->
+    <include layout="@layout/activity_base"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_line"
+        android:background="@color/line"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/item_my_setting_shap"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_user_head"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_vertical"
+                android:text="头像"
+                android:textColor="@color/item_text_sel"
+                android:textSize="14sp"/>
+
+            <shinerich.com.stylemodel.widget.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/iv_user_head"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/user_img_def"
+                app:civ_border_color="@color/circle_border"
+                app:civ_border_width="1dp"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_line"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@color/line"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_user_name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_vertical"
+                android:text="昵称"
+                android:textColor="@color/item_text_sel"
+                android:textSize="14sp"/>
+
+
+            <EditText
+                android:id="@+id/ed_user_name"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_toLeftOf="@id/iv_clean_right"
+                android:background="@null"
+                android:gravity="right|center_vertical"
+                android:hint="请输入"
+                android:textColor="@color/item_text_sel"
+                android:textColorHint="@color/text_hint"
+                android:textCursorDrawable="@null"
+                android:textSize="14sp"
+                />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_line"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@color/line"/>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_user_sex"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_vertical"
+                android:text="性别"
+                android:textColor="@color/item_text_sel"
+                android:textSize="14sp"/>
+
+
+            <TextView
+                android:id="@+id/tv_user_sex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:layout_toLeftOf="@id/iv_clean_right"
+                android:hint="未知"
+                android:textColor="@color/item_text_sel"
+                android:textColorHint="@color/text_hint"
+                android:textSize="14sp"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_line"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@color/line"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_user_birthday"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_vertical"
+                android:text="生日"
+                android:textColor="@color/item_text_sel"
+                android:textSize="14sp"/>
+
+
+            <TextView
+                android:id="@+id/tv_user_birthday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:layout_toLeftOf="@id/iv_clean_right"
+                android:gravity="right"
+                android:hint="0000-00-00"
+                android:textColor="@color/item_text_sel"
+                android:textColorHint="@color/text_hint"
+                android:textSize="14sp"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_line"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@color/line"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_user_address"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_vertical"
+                android:text="所在地"
+                android:textColor="@color/item_text_sel"
+                android:textSize="14sp"/>
+
+
+            <TextView
+                android:id="@+id/tv_user_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:layout_toLeftOf="@id/iv_clean_right"
+                android:hint="未设置"
+                android:textColor="@color/item_text_sel"
+                android:textColorHint="@color/text_hint"
+                android:textSize="14sp"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/item_my_setting_shap"
+        android:text="保存"
+        android:textColor="@color/green_text_color"
+        android:textSize="14sp"/>
+</LinearLayout>

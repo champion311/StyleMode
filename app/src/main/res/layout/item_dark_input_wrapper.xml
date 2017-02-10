@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/bottom_input_view"
+              android:layout_width="match_parent"
+              android:layout_height="49dp"
+              android:layout_gravity="bottom"
+              android:background="@color/total_transparent_black"
+              android:focusable="true"
+              android:gravity="center_vertical"
+              android:orientation="horizontal"
+              android:paddingLeft="12dp"
+              android:paddingRight="20dp"
+
+
+    >
+
+    <EditText
+        android:id="@+id/input_edit"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/comment_input_bg_dark"
+        android:gravity="center_vertical"
+        android:hint="评论"
+        android:imeOptions="actionSend"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:singleLine="true"
+        android:textColor="@color/gray_text_color"
+        android:textColorHint="@color/dark_hint_color"
+        android:textSize="13sp"
+
+        />
+
+
+    <RelativeLayout
+        android:id="@+id/comment_wrapper"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="27dp"
+
+        >
+
+        <ImageView
+            android:id="@+id/comment_icon"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/comment_dark_icon"
+
+
+            />
+
+        <TextView
+            android:id="@+id/comment_number"
+            android:layout_width="21dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="top|right"
+            android:layout_marginTop="7dp"
+            android:layout_toRightOf="@id/comment_icon"
+            android:background="@drawable/number_of_danmu"
+            android:gravity="center"
+            android:text="23"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            />
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="9"
+        />
+
+    <ImageView
+        android:id="@+id/collect_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:src="@drawable/collect_dark_icon"
+        />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="16"
+        />
+
+    <ImageView
+        android:id="@+id/danmu_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:src="@drawable/danmu_dark_icon"
+
+        />
+
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="16"
+        />
+
+    <ImageView
+        android:id="@+id/share_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:src="@drawable/share_btn_dark"
+        />
+
+
+</LinearLayout>

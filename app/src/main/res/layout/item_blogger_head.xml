@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:drawablePadding="15dp"
+              android:drawableTop="@drawable/default_blogger_head"
+              android:gravity="center_horizontal"
+              android:orientation="vertical"
+              android:text="博主昵称"
+
+
+    >
+
+    <shinerich.com.stylemodel.widget.CircleImageView
+        android:id="@+id/mHead"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/ll_bg"
+
+        />
+
+    <TextView
+        android:id="@+id/mName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:text="博主名称"
+        android:textColor="@color/black_text_color"
+        android:textSize="12sp"
+        />
+
+
+</LinearLayout>

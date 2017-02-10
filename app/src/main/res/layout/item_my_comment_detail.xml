@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/rl_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+    >
+
+    <shinerich.com.stylemodel.widget.CircleImageView
+        android:id="@+id/iv_user_head"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="11dp"
+        android:src="@drawable/default_blogger_head"/>
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="11dp"
+        android:layout_toRightOf="@id/iv_user_head"
+        android:text="复式鸿运"
+        android:textColor="@color/green_text_color"
+        android:textSize="11dp"/>
+
+    <TextView
+        android:id="@id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="7dp"
+        android:layout_toRightOf="@id/tv_name"
+        android:text="昨天 18:20"
+        android:textColor="@color/time_color"
+        android:textSize="11sp"/>
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_name"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="6dp"
+        android:layout_toRightOf="@id/iv_user_head"
+        android:text="这个世界太乱"
+        android:textSize="11sp"
+
+
+        />
+</RelativeLayout>

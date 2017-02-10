@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<shinerich.com.stylemodel.widget.MySlidingUpPaneLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mslideguppanel"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top">
+
+    <com.bilibili.magicasakura.widgets.TintRelativeLayout
+
+        android:id="@+id/mParentView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/theme_color_primary_trans"
+        android:clipToPadding="false"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical"
+        app:backgroundTint="@color/theme_color_primary_trans"
+
+
+        >
+
+        <FrameLayout
+            android:id="@+id/mFragmentWrapper"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+        <com.bilibili.magicasakura.widgets.TintLinearLayout
+            android:id="@+id/bottomTabsWrapper"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:background="@color/theme_color_primary_trans"
+            android:gravity="center_vertical"
+            app:backgroundTint="@color/theme_color_primary_trans"
+            app:backgroundTintMode="src_in"
+
+            >
+
+            <TextView
+                android:id="@+id/home_page"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/home_page_icon"
+                android:gravity="center_horizontal"
+                android:text="首页"
+                android:textColor="@drawable/btn_color"
+                android:textSize="10sp"
+
+                />
+
+            <TextView
+                android:id="@+id/subscribe"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/subscribe_icon"
+                android:gravity="center_horizontal"
+                android:text="订阅"
+                android:textColor="@drawable/btn_color"
+                android:textSize="10sp"
+
+                />
+
+
+            <TextView
+                android:id="@+id/discover"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/discover_icon"
+                android:gravity="center_horizontal"
+                android:text="发现"
+                android:textColor="@drawable/btn_color"
+                android:textSize="10sp"
+
+                />
+
+            <TextView
+                android:id="@+id/mine"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/mine_icon"
+                android:gravity="center_horizontal"
+                android:text="我的"
+                android:textColor="@drawable/btn_color"
+                android:textSize="10sp"
+
+                />
+
+        </com.bilibili.magicasakura.widgets.TintLinearLayout>
+
+
+        <com.bilibili.magicasakura.widgets.TintView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_above="@id/bottomTabsWrapper"
+            android:background="@color/divider_color"
+            />
+
+
+    </com.bilibili.magicasakura.widgets.TintRelativeLayout>
+
+    <include layout="@layout/item_my_column"/>
+
+</shinerich.com.stylemodel.widget.MySlidingUpPaneLayout>

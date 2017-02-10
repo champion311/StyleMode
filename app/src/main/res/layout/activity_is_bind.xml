@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/login_bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+    <!--标题-->
+    <include layout="@layout/activity_base_login" />
+
+
+    <EditText
+        android:id="@+id/et_mobile"
+        android:layout_width="227dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="101dp"
+        android:background="@null"
+        android:gravity="center"
+        android:hint="请输入要绑定手机号"
+        android:inputType="number"
+        android:maxLength="11"
+        android:textColor="@color/title_text_login"
+        android:textColorHint="@color/login_text_hint"
+        android:textSize="15sp" />
+
+    <View
+        android:layout_width="227dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="9dp"
+        android:background="@color/login_text_hint" />
+
+
+    <Button
+        android:id="@+id/btn_bind"
+        android:layout_width="227dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/login_btn_def_shape"
+        android:enabled="false"
+        android:text="下一步"
+        android:gravity="center"
+        android:textColor="@color/login_text_hint"
+        android:textSize="15sp" />
+
+</LinearLayout>

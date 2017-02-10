@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 颜色值待修改-->
+    <color name="theme_color_primary">#454547</color>
+    <color name="theme_color_primary_dark">#454547</color>
+    <color name="theme_color_primary_trans">#454547</color>
+    <color name="theme_color_primary_common_background">#3c3c3d</color>
+    <color name="theme_color_primary_card_view_bg">#4a4a4a</color>
+    <color name="theme_color_primary_common_text_color">#949494</color>
+    <color name="theme_color_primary_more_btn_color">#414142</color>
+    <color name="theme_color_primary_line">#3c3c3d</color>
+    <color name="theme_color_primary_time_color">#757575</color>
+    <color name="theme_color_primary_sub_default_bg">#454547</color>
+
+    <color name="tab_text_unselected">#5d5d5e</color>
+    <color name="tab_text_selected">#2db6ac</color>
+
+    <color name="common_background">#3c3c3d</color>
+
+    <color name="line">#3c3c3d</color>
+
+    <color name="info_background">#3c3c3d</color>
+
+    <color name="common_text_color">#949494</color>
+
+    <color name="bloggers_backgound">#3c3c3d</color>
+
+    <color name="blogger_down_bg">#414142</color>
+
+    <color name="blogger_head_divider">#414142</color>
+
+    <color name="home_page_selected_color">#b2b2b2</color>
+    <color name="home_page_unselected_color">#757575</color>
+
+    <color name="card_view_bg">#4a4a4a</color>
+
+    <color name="sub_arrangement_text_color">#757575</color>
+
+    <color name="more_btn_color">#414142</color>
+
+    <color name="input_wrapper_parent">#454547</color>
+
+    <color name="gray_text_color">#757575</color>
+
+    <color name="time_color">#757575</color>
+
+    <color name="content_color">#949494</color>
+
+    <color name="reply_bg_color">#4a4a4a</color>
+
+    <color name="divider_color">#323233</color>
+
+    <color name="comment_act_bg">#323233</color>
+
+    <color name="comment_list_bg">#3c3c3d</color>
+
+    <color name="item_text_sel">#949494</color>
+
+    <color name="empty_view_color">#3c3c3d</color>
+
+    <color name="item_text">#757575</color>
+
+    <color name="mine_name_color">#b2b2b2</color>
+
+    <color name="mine_mask_view_color">#3c3c3c</color>
+
+    <color name="dark_line">#4a4a4a</color>
+
+    <color name="mine_message_col_bg">#414142</color>
+
+    <color name="title_top">#454547</color>
+
+    <color name="msg_item_sel">#39393b</color>
+
+    <color name="default_collect_color">#414142</color>
+
+    <color name="bg">#3c3c3d</color>
+
+    <color name="c4242">#424242</color>
+
+    <color name="text_hint">#949494</color>
+
+    <color name="title_text_login">#b2b2b2</color>
+
+    <color name="c2a">#b2b2b2</color>
+
+    <color name="text_color">#949494</color>
+
+    <color name="cf6">#3c3c3e</color>
+
+    <color name="c999">#949494</color>
+
+    <color name="collect_detial">#949494</color>
+    
+
+
+
+</resources>

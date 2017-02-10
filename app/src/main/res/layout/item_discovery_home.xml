@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:visibility="visible"
+    >
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:paddingBottom="13dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="18dp"
+        android:text="· 经典的黑白配，对比强烈气场十足！"
+        android:textColor="@color/item_text"
+        android:textSize="12sp"/>
+
+    <com.bilibili.magicasakura.widgets.TintTextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/dark_line"
+        />
+
+</LinearLayout>
+

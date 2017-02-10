@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg"
+    android:orientation="horizontal">
+
+    <shinerich.com.stylemodel.widget.CircleImageView
+        android:id="@+id/iv_reply_head"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/user_img_def"
+        app:civ_border_color="@color/line"
+        app:civ_border_width="@dimen/space_line" />
+
+    <EditText
+        android:id="@+id/et_reply"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:background="@drawable/my_message_bottom_bg_shap"
+        android:gravity="center_vertical"
+        android:hint="请输入回复内容"
+        android:imeOptions="actionSend"
+        android:maxLines="1"
+        android:paddingBottom="8dp"
+        android:paddingLeft="15dp"
+        android:paddingTop="8dp"
+        android:text=""
+        android:textColor="@color/item_text_sel"
+        android:textColorHint="@color/text_hint"
+        android:textSize="13sp" />
+
+</LinearLayout>

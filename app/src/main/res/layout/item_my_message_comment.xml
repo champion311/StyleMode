@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <!--评论信息-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <shinerich.com.stylemodel.widget.CircleImageView
+            android:id="@+id/iv_user_head"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="25dp"
+            android:src="@drawable/default_blogger_head"
+            app:civ_border_width="0dp" />
+
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="28dp"
+            android:layout_toRightOf="@id/iv_user_head"
+            android:maxLines="1"
+            android:text="系统通知"
+            android:textColor="@color/green_text_color"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_name"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/iv_user_head"
+            android:maxLines="1"
+            android:text="12:52"
+            android:textColor="@color/time_color" />
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_time"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="17dp"
+            android:layout_toRightOf="@id/iv_user_head"
+            android:text="诡异的编曲，略微神经质的唱腔太棒啦！"
+            android:textColor="@color/item_text_sel"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+    <!--文章标题-->
+    <TextView
+        android:id="@+id/tv_article_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/message_comment_bg_shap"
+        android:padding="20dp"
+        android:text="原文"
+        android:textColor="@color/item_text"
+        android:textSize="12sp" />
+
+    <View
+        android:id="@+id/v_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_line"
+        android:layout_marginTop="20dp"
+        android:background="@color/line" />
+
+</LinearLayout>

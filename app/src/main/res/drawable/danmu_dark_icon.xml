@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/dannu_closed_dark" android:state_selected="false"/>
+
+    <item android:drawable="@drawable/danmu_open_dark" android:state_selected="true"/>
+
+</selector>

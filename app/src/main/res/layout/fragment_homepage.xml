@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    >
+
+
+    <com.bilibili.magicasakura.widgets.TintLinearLayout
+        android:id="@+id/tab_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/theme_color_primary"
+        android:orientation="horizontal"
+        app:backgroundTint="@color/theme_color_primary"
+        app:backgroundTintMode="src_in"
+
+        >
+
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fillViewport="false"
+            android:paddingLeft="25dp"
+            android:paddingRight="10dp"
+            app:tabGravity="center"
+            app:tabIndicatorColor="@android:color/transparent"
+            app:tabIndicatorHeight="0dp"
+            app:tabMode="scrollable"
+            app:tabSelectedTextColor="@color/home_page_selected_color"
+            app:tabTextAppearance="@style/MyCustomTabTextAppearance"
+            app:tabTextColor="@color/home_page_unselected_color"
+
+            />
+
+        <ImageView
+            android:id="@+id/menu_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingRight="15dp"
+            android:src="@drawable/menu_icon"
+            android:text="下拉"
+            />
+
+    </com.bilibili.magicasakura.widgets.TintLinearLayout>
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/content_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+    </android.support.v4.view.ViewPager>
+
+
+</LinearLayout>
+
+
+
+
+

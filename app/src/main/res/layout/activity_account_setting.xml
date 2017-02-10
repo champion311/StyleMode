@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+    <!--标题-->
+    <include layout="@layout/activity_base" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_line"
+        android:background="@color/line" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="StyleMode中文账号"
+        android:textColor="@color/text_hint"
+        android:textSize="14sp" />
+
+
+    <!--模块一-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/item_my_setting_shap"
+        android:orientation="vertical"
+        android:padding="@dimen/space_line">
+
+        <RelativeLayout
+            android:id="@+id/rl_mobile"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/item_about_top_selector">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_vertical"
+                android:text="手机账号"
+                android:textColor="@color/item_text_sel"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_mobile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:textColor="@color/text_hint"
+                android:textColorHint="@color/text_hint" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_line"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@color/line" />
+
+
+        <RelativeLayout
+            android:id="@+id/rl_reset_password"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/item_about_bottom_selector">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_vertical"
+                android:text="重置密码"
+                android:textColor="@color/item_text_sel"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/right_back" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="第三方账号"
+        android:textColor="@color/text_hint"
+        android:textSize="14sp" />
+
+    <!--模块二-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/item_my_setting_shap"
+        android:orientation="vertical"
+        android:padding="@dimen/space_line">
+
+        <RelativeLayout
+            android:id="@+id/rl_wb"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/item_about_top_selector">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_vertical"
+                android:text="新浪微博"
+                android:textColor="@color/item_text_sel"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_wb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:hint="未绑定"
+                android:textColor="@color/text_hint"
+                android:textColorHint="@color/text_hint" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_line"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@color/line" />
+
+
+        <RelativeLayout
+            android:id="@+id/rl_qq"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/item_about_selector">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_vertical"
+                android:text="QQ"
+                android:textColor="@color/item_text_sel"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_qq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:hint="未绑定"
+                android:textColor="@color/text_hint"
+                android:textColorHint="@color/text_hint" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_line"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@color/line" />
+
+        <RelativeLayout
+            android:id="@+id/rl_wx"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/item_about_bottom_selector">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_vertical"
+                android:text="微信"
+                android:textColor="@color/item_text_sel"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_wx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:hint="未绑定"
+                android:textColor="@color/text_hint"
+                android:textColorHint="@color/text_hint" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

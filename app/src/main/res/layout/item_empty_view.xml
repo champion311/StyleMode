@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/empty_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_color_primary_common_background"
+    android:visibility="gone"
+    >
+
+
+    <ImageView
+        android:id="@+id/new_error_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="135dp"
+        android:src="@drawable/net_error_icon"
+
+        />
+
+    <com.bilibili.magicasakura.widgets.TintTextView
+        android:id="@+id/new_error_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/new_error_icon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:text="找不到网络"
+        android:textColor="@color/theme_color_primary_time_color"
+
+        />
+
+    <TextView
+        android:id="@+id/refresh_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/new_error_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/refrsh_button"
+        android:gravity="center"
+        android:text="刷新"
+        android:textColor="@color/c999"
+        android:textSize="14sp"
+
+        />
+
+
+</com.bilibili.magicasakura.widgets.TintRelativeLayout>

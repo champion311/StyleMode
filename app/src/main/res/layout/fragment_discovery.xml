@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mParentView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_color_primary_common_background"
+    android:orientation="vertical"
+    app:backgroundTint="@color/theme_color_primary_common_background"
+    app:backgroundTintMode="src_in"
+
+    >
+
+    <!--标题-->
+    <com.bilibili.magicasakura.widgets.TintRelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/theme_color_primary">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:maxLength="13"
+            android:singleLine="true"
+            android:text="发现"
+            android:textColor="@color/title_text_login"
+            android:textSize="@dimen/title_size"/>
+
+    </com.bilibili.magicasakura.widgets.TintRelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!--搜索-->
+            <com.bilibili.magicasakura.widgets.TintLinearLayout
+                android:id="@+id/ll_search"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_margin="10dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/discovery_search_shap"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="13dp"
+                    android:layout_height="13dp"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/search_img"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="搜索感兴趣的内容"
+                    android:textColor="@color/time_color"
+                    android:textSize="14sp"/>
+
+            </com.bilibili.magicasakura.widgets.TintLinearLayout>
+
+            <com.bilibili.magicasakura.widgets.TintLinearLayout
+                android:id="@+id/ll_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="116dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/discovery_item_shap"
+                android:orientation="vertical">
+
+                <com.bilibili.magicasakura.widgets.TintTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="47dp"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center_vertical"
+                    android:text="大家都在看"
+                    android:textColor="@color/item_text_sel"
+                    android:textSize="14sp"/>
+
+                <com.bilibili.magicasakura.widgets.TintView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_line"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@color/dark_line"/>
+
+                <shinerich.com.stylemodel.widget.NoScrollListView
+                    android:id="@+id/lv_discovery"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:cacheColorHint="@color/transparent"
+
+                    android:dividerHeight="@dimen/space_line"
+                    android:listSelector="@color/transparent"/>
+
+                <com.bilibili.magicasakura.widgets.TintView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_line"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@color/dark_line"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_footer_refresh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="13dp"
+                        android:layout_height="13dp"
+                        android:src="@drawable/disovery_bottom_refresh"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="换一批"
+                        android:textColor="@color/item_text"
+                        android:textSize="14sp"/>
+                </LinearLayout>
+            </com.bilibili.magicasakura.widgets.TintLinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</com.bilibili.magicasakura.widgets.TintLinearLayout>

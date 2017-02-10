@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bilibili.magicasakura.widgets.TintLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_color_primary_trans"
+    android:orientation="horizontal"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="50dp"
+        android:orientation="vertical">
+
+        <com.bilibili.magicasakura.widgets.TintImageView
+            android:id="@+id/iv_user_head"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/user_img_def"
+            app:civ_border_color="@color/blogger_head_divider"
+            app:civ_border_width="0.5dp"
+
+
+            />
+
+        <com.bilibili.magicasakura.widgets.TintTextView
+            android:id="@+id/tv_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:text="点击头像登录"
+            android:textColor="@color/theme_color_primary_common_text_color"
+            android:textSize="24sp"/>
+    </LinearLayout>
+</com.bilibili.magicasakura.widgets.TintLinearLayout>

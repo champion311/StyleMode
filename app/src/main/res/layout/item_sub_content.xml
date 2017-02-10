@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+
+
+              android:orientation="vertical"
+              android:paddingTop="10dp"
+
+    >
+
+    <com.bilibili.magicasakura.widgets.TintView
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/theme_color_primary_common_background"
+        android:visibility="gone"
+
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/item_subsription"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp">
+
+            <shinerich.com.stylemodel.widget.CircleImageView
+                android:id="@+id/content_provider_head"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+
+
+                />
+
+            <com.bilibili.magicasakura.widgets.TintTextView
+                android:id="@+id/mColumn_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="14dp"
+                android:layout_toRightOf="@id/content_provider_head"
+                android:text="栏目名称"
+                android:textColor="@color/theme_color_primary_common_text_color"/>
+
+
+            <com.bilibili.magicasakura.widgets.TintTextView
+                android:id="@+id/sub_cotent_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:text="4小时前"
+                android:textColor="@color/theme_color_primary_time_color"
+                />
+
+
+        </RelativeLayout>
+
+        <com.bilibili.magicasakura.widgets.TintImageView
+            android:id="@+id/mImageView"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:layout_margin="1dp"
+            android:background="@color/theme_color_primary_sub_default_bg"
+            android:scaleType="centerCrop"
+            />
+
+        <com.bilibili.magicasakura.widgets.TintTextView
+            android:id="@+id/mDescribe"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/theme_color_primary_common_text_color"
+            android:textSize="16sp"
+
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

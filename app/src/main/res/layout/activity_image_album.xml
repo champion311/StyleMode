@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/mParentView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/black"
+                android:fitsSystemWindows="true"
+
+    >
+
+    <ProgressBar
+        android:id="@+id/mProgressBar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"/>
+
+
+    <shinerich.com.stylemodel.widget.MyViewPager
+        android:id="@+id/mViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingBottom="50dp"
+        android:paddingTop="50dp"
+        android:scaleType="centerCrop"
+        android:visibility="visible"
+        />
+
+
+    <RelativeLayout
+        android:id="@+id/top_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="78dp"
+
+        android:layout_alignParentTop="true"
+        android:layout_gravity="top"
+        android:visibility="visible"
+        >
+
+        <ImageView
+            android:id="@+id/back_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/back_icon_dark"
+            />
+
+        <TextView
+            android:id="@+id/album_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            />
+
+
+    </RelativeLayout>
+
+
+    <master.flame.danmaku.ui.widget.DanmakuView
+        android:id="@+id/danmakuView"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="49dp"
+        android:background="@android:color/transparent"
+        android:visibility="visible"
+        />
+
+
+    <RelativeLayout
+        android:id="@+id/bottom_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/total_transparent_black"
+        android:paddingBottom="20dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="20dp"
+        >
+
+        <include
+            android:id="@+id/bottom_input_view"
+            layout="@layout/item_dark_input_wrapper"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:layout_alignParentBottom="true"
+            />
+
+        <View
+            android:id="@+id/bottom_line"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignTop="@id/bottom_input_view"
+            android:background="#1c1c1c"
+
+            />
+
+        <TextView
+            android:id="@+id/album_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/bottom_line"
+            android:layout_marginBottom="20dp"
+            android:lineSpacingExtra="5dp"
+            android:maxLines="3"
+            android:text="2333333"
+            android:textColor="#aeaeae"
+            android:textSize="12sp"
+            />
+
+        <TextView
+            android:id="@+id/album_content_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/album_content"
+            android:layout_marginBottom="10dp"
+            android:text="title"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

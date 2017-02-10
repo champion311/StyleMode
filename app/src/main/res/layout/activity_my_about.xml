@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical">
+
+    <!--标题-->
+    <include layout="@layout/activity_base"/>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_line"
+        android:background="@color/line" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/bg"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/my_ahout_logo" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="30dp"
+                android:lineSpacingExtra="5dp"
+                android:text="@string/about_msg"
+                android:textColor="@color/item_text"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="25dp"
+                android:lineSpacingExtra="5dp"
+                android:text="@string/about_msg1"
+                android:textColor="@color/item_text"
+                android:textSize="14sp" />
+
+
+            <ImageView
+                android:id="@+id/iv_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/my_about_code" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="30dp"
+                android:lineSpacingExtra="5dp"
+                android:text="@string/about_number"
+                android:textColor="@color/item_text"
+                android:textSize="14sp" />
+
+
+            <Button
+                android:id="@+id/btn_declare"
+                android:layout_width="129dp"
+                android:layout_height="40dp"
+                android:text="隐私声明"
+                android:layout_marginTop="50dp"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@drawable/my_text_btn_selector"
+                android:background="@drawable/my_about_btn_shap"
+                android:layout_marginBottom="74dp"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

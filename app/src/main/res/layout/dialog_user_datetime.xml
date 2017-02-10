@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:orientation="vertical">
+    <!--标题 -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/theme_color_primary_card_view_bg">
+
+        <TextView
+            android:id="@+id/btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:gravity="center"
+            android:padding="10dip"
+            android:text="取消"
+            android:textColor="@color/c999"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="日期"
+            android:textColor="@color/c2a"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/btn_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:gravity="center"
+            android:padding="10dip"
+            android:text="完成"
+            android:textColor="@color/green_text_color"
+            android:textSize="14sp"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/line"/>
+
+    <DatePicker
+        android:id="@+id/dPicker_date"
+        android:layout_width="match_parent"
+        android:layout_height="176dp"
+        android:calendarViewShown="false"
+        android:calendarTextColor="@color/green_text_color"
+        android:background="@color/theme_color_primary_trans"
+        android:yearListItemTextAppearance="@color/green_color"
+        android:headerMonthTextAppearance="@color/green_text_color"
+
+
+        />
+</LinearLayout>

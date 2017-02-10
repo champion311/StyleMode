@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center"
+              android:orientation="vertical"
+              android:paddingBottom="15dp">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/head_image"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_gravity="bottom|left"
+            android:layout_margin="3dp"
+            android:layout_marginTop="3dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/subscirbe_arrangement_content"/>
+
+        <ImageView
+            android:id="@+id/selector_icon"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:layout_gravity="top|right"
+            android:scaleType="fitXY"
+            android:src="@drawable/selecotor_icon"
+            />
+
+    </FrameLayout>
+
+
+    <TextView
+        android:id="@+id/mBloggerName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:gravity="center_horizontal"
+        android:maxLines="2"
+        android:text="比克北比克北比克北比克北比克北"
+        android:textColor="@color/common_text_color"
+        android:textSize="15sp"/>
+
+</LinearLayout>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mParentView"
+    android:layout_width="match_parent"
+    android:layout_height="444dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="10dp"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:paddingBottom="10dp"
+    app:cardCornerRadius="10dp"
+    app:cardUseCompatPadding="true"
+    >
+
+    <shinerich.com.stylemodel.widget.CircleImageView
+        android:id="@+id/showed_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        app:rect_able="true"
+        />
+
+
+    <shinerich.com.stylemodel.widget.CircleImageView
+        android:id="@+id/mask_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/blue_mask"
+        app:rect_able="true"
+
+        />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="444dp"
+        android:layout_gravity="bottom"
+
+
+        >
+
+
+        <TextView
+            android:id="@+id/mColumn_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="18dp"
+            android:layout_marginLeft="15dp"
+            android:text="栏目名称"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+
+            />
+
+        <TextView
+            android:id="@+id/mTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="95dp"
+            android:gravity="left"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="23dsadsadsadsadsad"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/white"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            />
+
+        <ImageView
+            android:id="@+id/video_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/video_play_icon"
+            android:visibility="gone"
+            />
+
+        <ImageView
+            android:id="@+id/album_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="12dp"
+            android:src="@drawable/photo_album"
+            android:visibility="gone"
+            />
+
+        <View
+            android:layout_width="157dp"
+            android:layout_height="0.5dp"
+            android:layout_above="@id/mColumn_name"
+            android:layout_marginBottom="18dp"
+            android:layout_marginLeft="15dp"
+            android:background="@color/white"
+            />
+
+
+    </RelativeLayout>
+
+
+</FrameLayout>

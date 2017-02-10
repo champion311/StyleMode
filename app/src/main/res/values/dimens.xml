@@ -1,0 +1,12 @@
+<resources>
+
+    <!--常用的-->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="title_height">60dp</dimen>
+    <dimen name="title_top">60dp</dimen>
+    <dimen name="title_size">17sp</dimen>
+    <dimen name="space_line">0.5dp</dimen>
+
+
+</resources>

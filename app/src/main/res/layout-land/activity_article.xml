@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+             android:id="@+id/input_parent"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:fitsSystemWindows="true"
+             android:orientation="vertical"
+
+    >
+
+    <FrameLayout
+        android:id="@+id/mContentParent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+        <WebView
+            android:id="@+id/mWebView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            />
+
+
+        <ImageView
+            android:id="@+id/back_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/back_icon_dark"
+
+
+            />
+
+        <ViewStub
+            android:id="@+id/mViewStub"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_gravity="center"
+            android:inflatedId="@+id/dialog_view"
+            android:layout="@layout/loading_dialog"
+            >
+
+        </ViewStub>
+
+        <include
+            layout="@layout/item_bottom_input_view"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:layout_gravity="bottom"
+            />
+
+        <master.flame.danmaku.ui.widget.DanmakuView
+            android:id="@+id/danmakuView"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="49dp"
+            android:background="@android:color/transparent"
+            android:visibility="visible"
+            />
+
+
+    </FrameLayout>
+
+
+    <include layout="@layout/activity_video_play"/>
+
+
+</FrameLayout>
